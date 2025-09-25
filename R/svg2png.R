@@ -9,7 +9,8 @@
 #' @examples
 #' svg <- readLines("https://upload.wikimedia.org/wikipedia/commons/f/fd/Ghostscript_Tiger.svg")
 #' svg_to_png(svg, output = 'tiger.png')
-#' browseURL('tiger.png')
+#' # browseURL('tiger.png')
+#' unlink('tiger.png')
 svg_to_png <- function(svg, opts = list(), output = 'output.png') {
   if(is.character(svg) && length(svg) > 1)
     svg <- paste(svg, collapse = '\n')

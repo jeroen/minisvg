@@ -1,10 +1,10 @@
 Package: minisvg
 Type: Package
-Title: Convert SVG to PNG images
+Title: Convert SVG to PNG Images
 Version: 0.1.0
 Authors@R: person("Jeroen", "Ooms", 
     email = "jeroenooms@gmail.com", role = c("aut", "cre"))
-Description: Small SVG to PNG renderer based on resvg.
+Description: Lightweight SVG to PNG renderer based on resvg.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Imports: V8

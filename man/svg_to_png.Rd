@@ -19,5 +19,6 @@ Converts an svg string to a PNG image using resvg.
 \examples{
 svg <- readLines("https://upload.wikimedia.org/wikipedia/commons/f/fd/Ghostscript_Tiger.svg")
 svg_to_png(svg, output = 'tiger.png')
-browseURL('tiger.png')
+# browseURL('tiger.png')
+unlink('tiger.png')
 }
