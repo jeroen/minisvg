@@ -1,0 +1,8 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+.V8history
+js/node_modules
+*.png
+*.svg

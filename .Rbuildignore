@@ -1,0 +1,12 @@
+^\.DS_Store$
+^\.git$
+^\.gitignore$
+^\.Rhistory$
+^\.V8history$
+^.*\.Rproj$
+^\.Rproj\.user$
+^README.md$
+^js$
+^LICENSE.md$
+^.*\.png$
+^.*\.svg$

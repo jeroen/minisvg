@@ -1,0 +1,12 @@
+Package: minisvg
+Type: Package
+Title: Convert SVG to PNG images
+Version: 0.1.0
+Authors@R: person("Jeroen", "Ooms", 
+    email = "jeroenooms@gmail.com", role = c("aut", "cre"))
+Description: Small SVG to PNG renderer based on resvg.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: V8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
