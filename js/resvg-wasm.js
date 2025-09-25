@@ -1,5 +1,9 @@
 async function load_resvg_module(module){
     global.resvg = await import("@resvg/resvg-wasm");
+    var td = await import('text-decoding/build/index');
+    global.TextDecoder = td.TextDecoder;
+    global.TextEncoder = td.TextEncoder;
+    global.EncodingIndexes = td.EncodingIndexes;
     await resvg.initWasm(module);
 }
 

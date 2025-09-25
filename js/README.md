@@ -7,6 +7,6 @@ To update and rebuild `resvg-r`, run:
 ```bash
 cd js
 npm ci
-npm install @resvg/resvg-wasm
+npm install @resvg/resvg-wasm text-decoding
 npm run build
 ```
