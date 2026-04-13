@@ -18,6 +18,7 @@ jobs:
         config:
           - {os: macos-15,   r: 'release'}
           - {os: macos-15-intel, r: 'release'}
+          - {os: windows-11-arm, r: 'devel'}
           - {os: windows-2025,   r: 'devel'}
           - {os: windows-2025,   r: 'next'}
           - {os: windows-2025,   r: '4.5'}
