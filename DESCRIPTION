@@ -1,12 +1,13 @@
-Package: minisvg
+Package: quicksvg
 Type: Package
-Title: Convert SVG to PNG Images
+Title: Fast and Accurate SVG Renderer
 Version: 0.1.0
 Authors@R: person("Jeroen", "Ooms", 
     email = "jeroenooms@gmail.com", role = c("aut", "cre"))
-Description: Lightweight SVG to PNG renderer based on resvg.
+Description: Lightweight SVG to PNG converter based on resvg
+    <https://github.com/linebender/resvg>.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Imports: V8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.2
+RoxygenNote: 7.3.3.9000

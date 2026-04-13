@@ -3,7 +3,7 @@ ctx <- NULL
 
 .onLoad <- function(libname, pkgname){
   ctx <<- V8::v8()
-  wd <- setwd(system.file('js', package = 'minisvg'))
+  wd <- setwd(system.file('js', package = 'quicksvg'))
   on.exit(setwd(wd))
   blob <- readBin('index_bg.wasm', raw(), file.info('index_bg.wasm')$size)
   ctx$assign('bytes', blob)
