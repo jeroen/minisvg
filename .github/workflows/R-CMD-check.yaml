@@ -2,7 +2,7 @@ on:
   push:
   pull_request:
 
-name: R-CMD-check.yaml
+name: Reproduce intermittent Windows bug
 
 permissions: read-all
 
@@ -16,20 +16,46 @@ jobs:
       fail-fast: false
       matrix:
         config:
-          - {os: macos-15,   r: 'release'}
-          - {os: macos-15-intel, r: 'release'}
-          - {os: windows-11-arm, r: 'devel'}
-          - {os: windows-2025,   r: 'devel'}
-          - {os: windows-2025,   r: 'next'}
           - {os: windows-2025,   r: '4.5'}
-          - {os: windows-2025,   r: '4.4'}
-          - {os: windows-2025,   r: '4.3'}
-          - {os: windows-2025,   r: '4.2'}
-          - {os: windows-2025,   r: '4.1'}
-          - {os: ubuntu-latest,   r: 'devel', http-user-agent: 'release'}
-          - {os: ubuntu-latest,   r: 'release'}
-          - {os: ubuntu-latest,   r: 'oldrel-1'}
-
+          - {os: windows-2025,   r: '4.5'}
+          - {os: windows-2025,   r: '4.5'}
+          - {os: windows-2025,   r: '4.5'}
+          - {os: windows-2025,   r: '4.5'}
+          - {os: windows-2025,   r: '4.5'}
+          - {os: windows-2025,   r: '4.5'}
+          - {os: windows-2025,   r: '4.5'}
+          - {os: windows-2025,   r: '4.5'}
+          - {os: windows-2025,   r: '4.5'}
+          - {os: windows-2025,   r: '4.5'}
+          - {os: windows-2025,   r: '4.5'}
+          - {os: windows-2025,   r: '4.5'}
+          - {os: windows-2025,   r: '4.5'}
+          - {os: windows-2025,   r: '4.5'}
+          - {os: windows-2025,   r: '4.5'}
+          - {os: windows-2025,   r: '4.5'}
+          - {os: windows-2025,   r: '4.5'}
+          - {os: windows-11-arm, r: '4.5'}
+          - {os: windows-11-arm, r: '4.5'}
+          - {os: windows-11-arm, r: '4.5'}
+          - {os: windows-11-arm, r: '4.5'}
+          - {os: windows-11-arm, r: '4.5'}
+          - {os: windows-11-arm, r: '4.5'}
+          - {os: windows-11-arm, r: '4.5'}
+          - {os: windows-11-arm, r: '4.5'}
+          - {os: windows-11-arm, r: '4.5'}
+          - {os: windows-11-arm, r: '4.5'}
+          - {os: windows-11-arm, r: '4.5'}
+          - {os: windows-11-arm, r: '4.5'}
+          - {os: windows-11-arm, r: '4.5'}
+          - {os: windows-11-arm, r: '4.5'}
+          - {os: windows-11-arm, r: '4.5'}
+          - {os: windows-11-arm, r: '4.5'}
+          - {os: windows-11-arm, r: '4.5'}
+          - {os: windows-11-arm, r: '4.5'}
+          - {os: windows-11-arm, r: '4.5'}
+          - {os: windows-11-arm, r: '4.5'}
+          - {os: windows-11-arm, r: '4.5'}
+          - {os: windows-11-arm, r: '4.5'}
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
       R_KEEP_PKG_SOURCE: yes
